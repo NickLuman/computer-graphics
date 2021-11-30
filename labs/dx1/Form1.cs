@@ -30,7 +30,7 @@ namespace dx
 
 
             device.RenderState.CullMode = Cull.CounterClockwise;
-            device.Transform.Projection = Matrix.PerspectiveFovLH((float)Math.PI / 8, this.Width / this.Height, 1f, 50f);
+            device.Transform.Projection = Matrix.PerspectiveFovLH((float)Math.PI / 8, (float)this.Width / this.Height, 1f, 50f);
             device.Transform.View = Matrix.LookAtLH(new Vector3(20f, 20f, 20f), new Vector3(0, 0, 0), new Vector3(0, 0, 1));
 
 

@@ -37,7 +37,7 @@ namespace dx
 
 
             device.RenderState.CullMode = Cull.CounterClockwise;
-			device.Transform.Projection = Matrix.PerspectiveFovLH((float)Math.PI / 2, this.Width / this.Height, 1f, 50f);
+			device.Transform.Projection = Matrix.PerspectiveFovLH((float)Math.PI / 2, (float)this.Width / this.Height, 1f, 50f);
 			
 
             Bitmap b2 = (Bitmap)Image.FromFile("Resources/texture.bmp");
